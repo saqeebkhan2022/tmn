@@ -1,0 +1,2 @@
+import type {MetadataRoute} from 'next';import {services} from '@/lib/content';
+export default function sitemap():MetadataRoute.Sitemap{const url=process.env.NEXT_PUBLIC_SITE_URL||'https://example.com';return ['en','ar'].flatMap(lang=>[{url:`${url}/${lang}`,changeFrequency:'weekly' as const,priority:1},...services.map(s=>({url:`${url}/${lang}/services/${s.slug}`,changeFrequency:'monthly' as const,priority:.75}))])}

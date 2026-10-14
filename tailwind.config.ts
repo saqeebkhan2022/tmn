@@ -1,0 +1,2 @@
+import type { Config } from 'tailwindcss';
+export default {content:['./app/**/*.{ts,tsx}','./components/**/*.{ts,tsx}'],theme:{extend:{colors:{navy:'#061F43',ink:'#061932',gold:'#C9954A',cream:'#FBF8F2'},fontFamily:{sans:['Arial','sans-serif']},boxShadow:{premium:'0 24px 80px rgba(6,31,67,.10)'},animation:{float:'float 7s ease-in-out infinite'},keyframes:{float:{'0%,100%':{transform:'translateY(0px)'},'50%':{transform:'translateY(-12px)'}}}}},plugins:[]} satisfies Config;
